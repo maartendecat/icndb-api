@@ -1,0 +1,5 @@
+php_flag display_errors on
+
+RewriteEngine on
+RewriteCond $1 !^(^$|^/$|index\.php|api\.php|favicon\.ico|test\.php)
+RewriteRule ^(.*)$ /api.php/$1 [L]
