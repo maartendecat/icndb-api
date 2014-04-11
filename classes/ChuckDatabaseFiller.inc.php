@@ -227,7 +227,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(226, "\"Brokeback Mountain\" is not just a movie. It's also what %firstName% %lastName% calls the pile of dead ninjas in his front yard.", array()));
     $db->addJoke(new Quote(227, "When God said, \"let there be light\", %firstName% %lastName% said, \"say 'please'.\"", array()));
     $db->addJoke(new Quote(228, "%firstName% %lastName% does not eat. Food understands that the only safe haven from %firstName% %lastName%' fists is inside his own body.", array()));
-    $db->addJoke(new Quote(229, "One day %firstName% %lastName% walked down the street with a massive erection. There were no survivors.", array()));
+    $db->addJoke(new Quote(229, "One day %firstName% %lastName% walked down the street with a massive erection. There were no survivors.", array($explicit)));
     $db->addJoke(new Quote(230, "%firstName% %lastName% built a time machine and went back in time to stop the JFK assassination. As Oswald shot, %firstName% met all three bullets with his beard, deflecting them. JFK's head exploded out of sheer amazement.", array()));
     $db->addJoke(new Quote(231, "%firstName% %lastName% doesn't read books. He stares them down until he gets the information he wants.", array()));
     $db->addJoke(new Quote(232, "%firstName% %lastName% uses a night light. Not because %firstName% %lastName% is afraid of the dark, but the dark is afraid of %firstName% %lastName%.", array()));
