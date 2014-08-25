@@ -12,7 +12,7 @@ class ChuckDatabaseFiller {
     $nerdy = new Category(1, "nerdy", "Jokes about science, computers, IT etc.");
     $db->addCategory($nerdy);
     # jokes
-    $db->addJoke(new Quote(1, "%firstName% %lastName% uses ribbed condoms inside out, so he gets the pleasure.", array($nerdy, $explicit)));
+    $db->addJoke(new Quote(1, "%firstName% %lastName% uses ribbed condoms inside out, so he gets the pleasure.", array($explicit)));
     $db->addJoke(new Quote(2, "MacGyver can build an airplane out of gum and paper clips. %firstName% %lastName% can kill him and take it.", array()));
     $db->addJoke(new Quote(3, "%firstName% %lastName% doesn't read books. He stares them down until he gets the information he wants.", array()));
     $db->addJoke(new Quote(4, "If you ask %firstName% %lastName% what time it is, he always answers \"Two seconds till\". After you ask \"Two seconds to what?\", he roundhouse kicks you in the face.", array()));
