@@ -11,7 +11,8 @@ class JavaScriptEscaper extends Escaper {
    *  @return Escaped string
    */
   public function escape($string) {
-    return addslashes($string);
+    // only escape double quotes
+    return str_replace("\"", "\\\"", $string);
   }
 
 }
