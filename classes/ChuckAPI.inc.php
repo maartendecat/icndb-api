@@ -229,10 +229,20 @@ class ChuckAPI {
 	 *	Echos the given array of quotes as a JSON API result.
 	 *
 	 *	@param	$quotes	An array of Quote instance
+	 *  @param  $offset An integer representing a 'page index'
+	 *  @param  $limit An integer to limit the result list
 	 */
-	protected function echoQuotes($quotes) {
+	protected function echoQuotes($quotes, $offset=-1, $limit=-1) {
 		$array = '';
-		$first = true;
+		$first = true;		
+
+		if($offset != -1 && $limit != -1) {
+			// ignore paging if index is out of range
+			if(count($quotes) -1 >= $offset) {
+				$quotes = array_slice($quotes, $offset, $limit);
+			}
+		}
+
 		foreach($quotes as $quote) {
 			if($first == false) {
 				$array .= ', ';
@@ -249,12 +259,12 @@ class ChuckAPI {
 	 *	@param	$fn 	First name (string)
 	 *	@param	$ln		Last name (string)
 	 */
-	public function echoAllQuotes($fn, $ln) {
+	public function echoAllQuotes($fn, $ln, $offset=-1, $limit=-1) {
 		$quotes = $this->database->getAllQuotes();
 		foreach($quotes as $quote) {
 			$quote->replaceNames($fn, $ln);
 		}
-		$this->echoQuotes($quotes);
+		$this->echoQuotes($quotes, $offset, $limit);
 	}
 
 	/**
@@ -268,12 +278,12 @@ class ChuckAPI {
 	 *	@param	$fn 	First name (string)
 	 *	@param	$ln		Last name (string)
 	 */
-	public function echoAllQuotesBelongingTo($fn, $ln, $categories) {
+	public function echoAllQuotesBelongingTo($fn, $ln, $categories, $offset=-1, $limit=-1) {
 		$quotes = $this->database->getAllQuotesBelongingTo($categories);
 		foreach($quotes as $quote) {
 			$quote->replaceNames($fn, $ln);
 		}
-		$this->echoQuotes($quotes);
+		$this->echoQuotes($quotes, $offset, $limit);
 	}
 
 	/**
@@ -287,12 +297,12 @@ class ChuckAPI {
 	 *	@param	$fn 	First name (string)
 	 *	@param	$ln		Last name (string)
 	 */
-	public function echoAllQuotesExcluding($fn, $ln, $categories) {
+	public function echoAllQuotesExcluding($fn, $ln, $categories, $offset=-1, $limit=-1) {
 		$quotes = $this->database->getAllQuotesExcluding($categories);
 		foreach($quotes as $quote) {
 			$quote->replaceNames($fn, $ln);
 		}
-		$this->echoQuotes($quotes);
+		$this->echoQuotes($quotes, $offset, $limit);
 	}
 
 	/**
@@ -302,12 +312,12 @@ class ChuckAPI {
 	 *	@param	$ln		Last name (string)
 	 *	@param	$number	The number of random quotes to be echoed.
 	 */
-	public function echoRandomQuotes($fn, $ln, $number) {
+	public function echoRandomQuotes($fn, $ln, $number, $offset=-1, $limit=-1) {
 		$quotes = $this->database->getRandomQuotes($number);
 		foreach($quotes as $quote) {
 			$quote->replaceNames($fn, $ln);
 		}
-		$this->echoQuotes($quotes);
+		$this->echoQuotes($quotes, $offset, $limit);
 	}
 
 	/**
@@ -319,12 +329,12 @@ class ChuckAPI {
 	 *	@param	$number	The number of random quotes to be echoed.
 	 *	@param	$categories	The categories to exclude (array of strings)
 	 */
-	public function echoRandomQuotesExcluding($fn, $ln, $number, $categories) {
+	public function echoRandomQuotesExcluding($fn, $ln, $number, $categories, $offset=-1, $limit=-1) {
 		$quotes = $this->database->getRandomQuotesExcluding($number, $categories);
 		foreach($quotes as $quote) {
 			$quote->replaceNames($fn, $ln);
 		}
-		$this->echoQuotes($quotes);		
+		$this->echoQuotes($quotes, $offset, $limit);
 	}
 
 	/**
@@ -336,12 +346,12 @@ class ChuckAPI {
 	 *	@param	$number	The number of random quotes to be echoed.
 	 *	@param	$categories	The categories to limit (array of strings)
 	 */
-	public function echoRandomQuotesBelongingTo($fn, $ln, $number, $categories) {
+	public function echoRandomQuotesBelongingTo($fn, $ln, $number, $categories, $offset=-1, $limit=-1) {
 		$quotes = $this->database->getRandomQuotesBelongingTo($number, $categories);
 		foreach($quotes as $quote) {
 			$quote->replaceNames($fn, $ln);
 		}
-		$this->echoQuotes($quotes);		
+		$this->echoQuotes($quotes, $offset, $limit);
 	}
 
 	/************************************************************************************
