@@ -67,6 +67,26 @@ class ChuckDatabase {
 		}
 		return $result;
 	}
+	
+	/***************************************************
+	 * Apply paging settings
+	 ***************************************************/
+
+	/**
+	 * Returns an array containing quotes paginated
+	 *
+	 * @return Array of Quote instances
+	 */
+	private function applyPaging($quotes, $offset=-1, $limit=-1) {
+		if($offset != -1 && $limit > 0) {
+			// ignore paging if index is out of range
+			if(count($quotes) -1 >= $offset) {
+				$quotes = array_slice($quotes, $offset, $limit);
+			}
+		}
+		return $quotes;
+	}
+
 
 	/***************************************************
 	 *	Jokes
@@ -77,8 +97,8 @@ class ChuckDatabase {
 	 *
 	 *	@return	Array of Quote instances
 	 */
-	public function getAllQuotes() {
-		return $this->jokes;
+	public function getAllQuotes($offset=-1, $limit=-1) {
+		return $this->applyPaging($this->jokes, $offset, $limit);
 	}
 
 	/**
@@ -165,10 +185,10 @@ class ChuckDatabase {
 	 *	@param	$categories	Array of strings
 	 *	@return	Array of Quote instances
 	 */
-	public function getAllQuotesBelongingTo($categories) {
-    return array_filter($this->jokes, function($item) use ($categories) {
-      return $item->belongsToOneOfCategories($categories);
-    });
+	public function getAllQuotesBelongingTo($categories, $offset=-1, $limit=-1) {
+	    return $this->applyPaging(array_filter($this->jokes, function($item) use ($categories) {
+	      return $item->belongsToOneOfCategories($categories);
+	    }), $offset, $limit);
 	}
 
 	/**
@@ -181,10 +201,10 @@ class ChuckDatabase {
 	 *
 	 *	@return	Array of Quote instances
 	 */
-	public function getAllQuotesExcluding($categories) {
-		return array_filter($this->jokes, function($item) use ($categories) {
-      return !$item->belongsToOneOfCategories($categories);
-    });
+	public function getAllQuotesExcluding($categories, $offset=-1, $limit=-1) {
+		return $this->applyPaging(array_filter($this->jokes, function($item) use ($categories) {
+			return !$item->belongsToOneOfCategories($categories);
+		}), $offset, $limit);
 	}
 
 	/**

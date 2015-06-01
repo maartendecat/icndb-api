@@ -87,14 +87,26 @@ if($path == '/categories') {
 	} elseif(preg_match('/^\/jokes\/count/',$path, $matches)) { // think of the possible trailing '/' !!!
 		$api->echoQuoteCount();
 	} elseif(preg_match('/^\/jokes/',$path)) { // think of the possible trailing '/' !!!
+
+		$offset = -1;
+		$limit  = -1;
+
+		// enabling paging only if both criteria are available
+		if(isset($_GET['offset']) && isset($_GET['limit'])) {
+			$offset = $_GET['offset'];
+			$limit  = $_GET['limit'];
+		}
+
 		if(isset($_GET['limitTo'])) {
 			$limitTo = parseGETArray($_GET['limitTo']);
-			$api->echoAllQuotesBelongingTo($firstName, $lastName, $limitTo);
+			$api->echoAllQuotesBelongingTo($firstName, $lastName, $limitTo, $offset, $limit);
+
 		} elseif(isset($_GET['exclude'])) {
 			$exclude = parseGETArray($_GET['exclude']);
-			$api->echoAllQuotesExcluding($firstName, $lastName, $exclude);
+			$api->echoAllQuotesExcluding($firstName, $lastName, $exclude, $offset, $limit);
+
 		} else {
-			$api->echoAllQuotes($firstName, $lastName);
+			$api->echoAllQuotes($firstName, $lastName, $offset, $limit);
 		}
 	}
 }

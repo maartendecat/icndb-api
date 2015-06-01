@@ -229,10 +229,13 @@ class ChuckAPI {
 	 *	Echos the given array of quotes as a JSON API result.
 	 *
 	 *	@param	$quotes	An array of Quote instance
+	 *  @param  $offset An integer representing a 'page index'
+	 *  @param  $limit An integer to limit the result list
 	 */
 	protected function echoQuotes($quotes) {
 		$array = '';
 		$first = true;
+
 		foreach($quotes as $quote) {
 			if($first == false) {
 				$array .= ', ';
@@ -249,8 +252,8 @@ class ChuckAPI {
 	 *	@param	$fn 	First name (string)
 	 *	@param	$ln		Last name (string)
 	 */
-	public function echoAllQuotes($fn, $ln) {
-		$quotes = $this->database->getAllQuotes();
+	public function echoAllQuotes($fn, $ln, $offset=-1, $limit=-1) {
+		$quotes = $this->database->getAllQuotes($offset, $limit);
 		foreach($quotes as $quote) {
 			$quote->replaceNames($fn, $ln);
 		}
@@ -268,8 +271,8 @@ class ChuckAPI {
 	 *	@param	$fn 	First name (string)
 	 *	@param	$ln		Last name (string)
 	 */
-	public function echoAllQuotesBelongingTo($fn, $ln, $categories) {
-		$quotes = $this->database->getAllQuotesBelongingTo($categories);
+	public function echoAllQuotesBelongingTo($fn, $ln, $categories, $offset=-1, $limit=-1) {
+		$quotes = $this->database->getAllQuotesBelongingTo($categories, $offset, $limit);
 		foreach($quotes as $quote) {
 			$quote->replaceNames($fn, $ln);
 		}
@@ -287,8 +290,8 @@ class ChuckAPI {
 	 *	@param	$fn 	First name (string)
 	 *	@param	$ln		Last name (string)
 	 */
-	public function echoAllQuotesExcluding($fn, $ln, $categories) {
-		$quotes = $this->database->getAllQuotesExcluding($categories);
+	public function echoAllQuotesExcluding($fn, $ln, $categories, $offset=-1, $limit=-1) {
+		$quotes = $this->database->getAllQuotesExcluding($categories, $offset, $limit);
 		foreach($quotes as $quote) {
 			$quote->replaceNames($fn, $ln);
 		}
@@ -324,7 +327,7 @@ class ChuckAPI {
 		foreach($quotes as $quote) {
 			$quote->replaceNames($fn, $ln);
 		}
-		$this->echoQuotes($quotes);		
+		$this->echoQuotes($quotes);
 	}
 
 	/**
@@ -341,7 +344,7 @@ class ChuckAPI {
 		foreach($quotes as $quote) {
 			$quote->replaceNames($fn, $ln);
 		}
-		$this->echoQuotes($quotes);		
+		$this->echoQuotes($quotes);
 	}
 
 	/************************************************************************************
