@@ -396,7 +396,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(397, "When %firstName% %lastName% makes a burrito, its main ingredient is real toes.", array()));
     $db->addJoke(new Quote(398, "%firstName% %lastName% is not Irish. His hair is soaked in the blood of his victims.", array()));
     $db->addJoke(new Quote(399, "In the movie \"The Matrix\", %firstName% %lastName% is the Matrix. If you pay close attention in the green \"falling code\" scenes, you can make out the faint texture of his beard.", array()));
-    $db->addJoke(new Quote(400, "%firstName% %lastName%' dick is so big, it has it's own dick, and that dick is still bigger than yours.", array()));
+    $db->addJoke(new Quote(400, "%firstName% %lastName%' dick is so big, it has it's own dick, and that dick is still bigger than yours.", array($explicit)));
     $db->addJoke(new Quote(401, "They say curiosity killed the cat. This is false. %firstName% %lastName% killed the cat. Every single one of them.", array()));
     $db->addJoke(new Quote(402, "There is no such thing as a lesbian, just a woman who has never met %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(403, "%firstName% %lastName% crossed the road. No one has ever dared question his motives.", array()));
