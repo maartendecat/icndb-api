@@ -151,7 +151,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(149, "%firstName% %lastName% proved that we are alone in the universe. We weren't before his first space expedition.", array()));
     $db->addJoke(new Quote(150, "Superman once watched an episode of Walker, Texas Ranger. He then cried himself to sleep.", array()));
     $db->addJoke(new Quote(151, "%firstName% %lastName% doesn't step on toes. %firstName% %lastName% steps on necks.", array()));
-    $db->addJoke(new Quote(152, "%firstName% %lastName% doesn't step on toes. %firstName% %lastName% steps on necks.", array()));
     $db->addJoke(new Quote(153, "The movie \"Delta Force\" was extremely hard to make because %firstName% had to downplay his abilities. The first few cuts were completely unbelievable.", array()));
     $db->addJoke(new Quote(154, "Movie trivia: The movie \"Invasion U.S.A.\" is, in fact, a documentary.", array()));
     $db->addJoke(new Quote(155, "%firstName% %lastName% does not \"style\" his hair. It lays perfectly in place out of sheer terror.", array()));
