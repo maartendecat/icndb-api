@@ -58,7 +58,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(51, "The quickest way to a man's heart is with %firstName% %lastName%' fist.", array()));
     $db->addJoke(new Quote(52, "When %firstName% %lastName% sends in his taxes, he sends blank forms and includes only a picture of himself, crouched and ready to attack. %firstName% %lastName% has not had to pay taxes, ever.", array()));
     $db->addJoke(new Quote(53, "%firstName% %lastName% drives an ice cream truck covered in human skulls.", array()));
-    $db->addJoke(new Quote(54, "If you ask %firstName% %lastName% what time it is, he always says, \"Two seconds 'til.\" After you ask, \"Two seconds 'til what?\" he roundhouse kicks you in the face.", array()));
     $db->addJoke(new Quote(55, "Most people have 23 pairs of chromosomes. %firstName% %lastName% has 72... and they're all poisonous.", array()));
     $db->addJoke(new Quote(56, "The Great Wall of China was originally created to keep %firstName% %lastName% out. It failed miserably.", array()));
     $db->addJoke(new Quote(57, "%firstName% %lastName% is ten feet tall, weighs two-tons, breathes fire, and could eat a hammer and take a shotgun blast standing.", array()));
