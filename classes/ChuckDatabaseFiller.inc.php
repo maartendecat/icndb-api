@@ -404,7 +404,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(409, "The term \"Cleveland Steamer\" got its name from %firstName% %lastName%, when he took a dump while visiting the Rock and Roll Hall of fame and buried northern Ohio under a glacier of fecal matter.", array()));
     $db->addJoke(new Quote(410, "%firstName% %lastName% once round-house kicked a salesman. Over the phone.", array()));
     $db->addJoke(new Quote(411, "The pen is mighter than the sword, but only if the pen is held by %firstName% %lastName%.", array()));
-    $db->addJoke(new Quote(412, "%firstName% %lastName% knows the last digit of pi.", array()));
+    $db->addJoke(new Quote(412, "%firstName% %lastName% knows the last digit of pi.", array($nerdy)));
     $db->addJoke(new Quote(413, "Those aren't credits that roll after Walker Texas Ranger. It is actually a list of fatalities that occurred during the making of the episode.", array()));
     $db->addJoke(new Quote(414, "The air around %firstName% %lastName% is always a balmy 78 degrees.", array()));
     $db->addJoke(new Quote(415, "When %firstName% %lastName% wants an egg, he cracks open a chicken.", array()));
@@ -468,7 +468,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(479, "%firstName% %lastName% does not need to know about class factory pattern. He can instantiate interfaces.", array($nerdy)));
     $db->addJoke(new Quote(480, "The class object inherits from %firstName% %lastName%", array($nerdy)));
     $db->addJoke(new Quote(481, "For %firstName% %lastName%, NP-Hard = O(1).", array($nerdy)));
-    $db->addJoke(new Quote(482, "%firstName% %lastName% knows the last digit of PI.", array($nerdy)));
     $db->addJoke(new Quote(483, "Bill Gates thinks he's %firstName% %lastName%. %firstName% %lastName% actually laughed. Once.", array()));
     $db->addJoke(new Quote(484, "%firstName% %lastName% is actually the front man for Apple. He let's Steve Jobs run the show when he's on a mission. %firstName% %lastName% is always on a mission.", array()));
     $db->addJoke(new Quote(485, "%firstName% %lastName%' Internet connection is faster upstream than downstream because even data has more incentive to run from him than to him.", array($nerdy)));
