@@ -212,7 +212,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(213, "How many %firstName% %lastName%' does it take to change a light bulb? None, %firstName% %lastName% prefers to kill in the dark.", array()));
     $db->addJoke(new Quote(214, "As President Roosevelt said: \"We have nothing to fear but fear itself. And %firstName% %lastName%.\"", array()));
     $db->addJoke(new Quote(215, "%firstName% %lastName% just says \"no\" to drugs. If he said \"yes\", it would collapse Colombia's infrastructure.", array()));
-    $db->addJoke(new Quote(216, "Since 1940, the year %firstName% %lastName% was born, roundhouse-kick related deaths have increased 13,000 percent.", array()));
     $db->addJoke(new Quote(217, "Crime does not pay - unless you are an undertaker following Walker, Texas Ranger, on a routine patrol.", array()));
     $db->addJoke(new Quote(218, "%firstName% %lastName% invented the internet? just so he had a place to store his porn.", array()));
     $db->addJoke(new Quote(219, "%firstName% %lastName% does not own a house. He walks into random houses and people move.", array()));
