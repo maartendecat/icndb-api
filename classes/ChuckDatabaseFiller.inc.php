@@ -226,7 +226,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(228, "%firstName% %lastName% does not eat. Food understands that the only safe haven from %firstName% %lastName%' fists is inside his own body.", array()));
     $db->addJoke(new Quote(229, "One day %firstName% %lastName% walked down the street with a massive erection. There were no survivors.", array($explicit)));
     $db->addJoke(new Quote(230, "%firstName% %lastName% built a time machine and went back in time to stop the JFK assassination. As Oswald shot, %firstName% met all three bullets with his beard, deflecting them. JFK's head exploded out of sheer amazement.", array()));
-    $db->addJoke(new Quote(231, "%firstName% %lastName% doesn't read books. He stares them down until he gets the information he wants.", array()));
     $db->addJoke(new Quote(232, "%firstName% %lastName% uses a night light. Not because %firstName% %lastName% is afraid of the dark, but the dark is afraid of %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(233, "When Bruce Banner gets mad, he turns into the Hulk. When the Hulk gets mad, he turns into %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(234, "%firstName% %lastName% kills anyone that asks: \"Do you want fries with that?\". Because by now everyone should know that %firstName% doesn't want fries with anything. Ever.", array()));
