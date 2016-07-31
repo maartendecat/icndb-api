@@ -505,7 +505,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(518, "%firstName% %lastName% doesn't cheat death. He wins fair and square.", array()));
     $db->addJoke(new Quote(519, "%firstName% %lastName% once won a game of connect four in 3 moves.", array()));
     $db->addJoke(new Quote(520, "With %firstName% %lastName% P = NP. There's no nondeterminism with %firstName% %lastName% decisions.", array($nerdy)));
-    $db->addJoke(new Quote(521, "%firstName% %lastName% lost his virginity before his dad did.", array($explicit)));
     $db->addJoke(new Quote(522, "%firstName% %lastName% can do a wheelie on a unicycle.", array()));
     $db->addJoke(new Quote(523, "%firstName% %lastName% can win in a game of Russian roulette with a fully loaded gun.", array()));
     $db->addJoke(new Quote(524, "%firstName% %lastName% eats lightning and shits out thunder.", array()));
