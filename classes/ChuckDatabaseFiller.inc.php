@@ -523,7 +523,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(537, "Each hair in %firstName% %lastName%'s beard contributes to make the world's largest DDOS.", array($nerdy)));
     $db->addJoke(new Quote(538, "%firstName% %lastName%'s log statements are always at the FATAL level.", array($nerdy)));
     $db->addJoke(new Quote(539, "%firstName% %lastName%'s database has only one table, 'Kick', which he DROPs frequently.", array($nerdy)));
-    $db->addJoke(new Quote(540, "%firstName% %lastName% finished World of Warcraft.", array($nerdy)));
     $db->addJoke(new Quote(541, "When %firstName% %lastName% break the build, you can't fix it, because there is not a single line of code left.", array($nerdy)));
     $db->addJoke(new Quote(542, "%firstName% %lastName% types with one finger. He points it at the keyboard and the keyboard does the rest.", array($nerdy)));
     $db->addJoke(new Quote(543, "%firstName% %lastName%'s programs can pass the Turing Test by staring at the interrogator.", array($nerdy)));
