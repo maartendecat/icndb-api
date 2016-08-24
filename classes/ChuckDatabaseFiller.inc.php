@@ -212,7 +212,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(213, "How many %firstName% %lastName%' does it take to change a light bulb? None, %firstName% %lastName% prefers to kill in the dark.", array()));
     $db->addJoke(new Quote(214, "As President Roosevelt said: \"We have nothing to fear but fear itself. And %firstName% %lastName%.\"", array()));
     $db->addJoke(new Quote(215, "%firstName% %lastName% just says \"no\" to drugs. If he said \"yes\", it would collapse Colombia's infrastructure.", array()));
-    $db->addJoke(new Quote(216, "Since 1940, the year %firstName% %lastName% was born, roundhouse-kick related deaths have increased 13,000 percent.", array()));
     $db->addJoke(new Quote(217, "Crime does not pay - unless you are an undertaker following Walker, Texas Ranger, on a routine patrol.", array()));
     $db->addJoke(new Quote(218, "%firstName% %lastName% invented the internet? just so he had a place to store his porn.", array()));
     $db->addJoke(new Quote(219, "%firstName% %lastName% does not own a house. He walks into random houses and people move.", array()));
@@ -227,7 +226,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(228, "%firstName% %lastName% does not eat. Food understands that the only safe haven from %firstName% %lastName%' fists is inside his own body.", array()));
     $db->addJoke(new Quote(229, "One day %firstName% %lastName% walked down the street with a massive erection. There were no survivors.", array($explicit)));
     $db->addJoke(new Quote(230, "%firstName% %lastName% built a time machine and went back in time to stop the JFK assassination. As Oswald shot, %firstName% met all three bullets with his beard, deflecting them. JFK's head exploded out of sheer amazement.", array()));
-    $db->addJoke(new Quote(231, "%firstName% %lastName% doesn't read books. He stares them down until he gets the information he wants.", array()));
     $db->addJoke(new Quote(232, "%firstName% %lastName% uses a night light. Not because %firstName% %lastName% is afraid of the dark, but the dark is afraid of %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(233, "When Bruce Banner gets mad, he turns into the Hulk. When the Hulk gets mad, he turns into %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(234, "%firstName% %lastName% kills anyone that asks: \"Do you want fries with that?\". Because by now everyone should know that %firstName% doesn't want fries with anything. Ever.", array()));
@@ -406,7 +404,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(409, "The term \"Cleveland Steamer\" got its name from %firstName% %lastName%, when he took a dump while visiting the Rock and Roll Hall of fame and buried northern Ohio under a glacier of fecal matter.", array()));
     $db->addJoke(new Quote(410, "%firstName% %lastName% once round-house kicked a salesman. Over the phone.", array()));
     $db->addJoke(new Quote(411, "The pen is mighter than the sword, but only if the pen is held by %firstName% %lastName%.", array()));
-    $db->addJoke(new Quote(412, "%firstName% %lastName% knows the last digit of pi.", array()));
+    $db->addJoke(new Quote(412, "%firstName% %lastName% knows the last digit of pi.", array($nerdy)));
     $db->addJoke(new Quote(413, "Those aren't credits that roll after Walker Texas Ranger. It is actually a list of fatalities that occurred during the making of the episode.", array()));
     $db->addJoke(new Quote(414, "The air around %firstName% %lastName% is always a balmy 78 degrees.", array()));
     $db->addJoke(new Quote(415, "When %firstName% %lastName% wants an egg, he cracks open a chicken.", array()));
@@ -470,7 +468,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(479, "%firstName% %lastName% does not need to know about class factory pattern. He can instantiate interfaces.", array($nerdy)));
     $db->addJoke(new Quote(480, "The class object inherits from %firstName% %lastName%", array($nerdy)));
     $db->addJoke(new Quote(481, "For %firstName% %lastName%, NP-Hard = O(1).", array($nerdy)));
-    $db->addJoke(new Quote(482, "%firstName% %lastName% knows the last digit of PI.", array($nerdy)));
     $db->addJoke(new Quote(483, "Bill Gates thinks he's %firstName% %lastName%. %firstName% %lastName% actually laughed. Once.", array()));
     $db->addJoke(new Quote(484, "%firstName% %lastName% is actually the front man for Apple. He let's Steve Jobs run the show when he's on a mission. %firstName% %lastName% is always on a mission.", array()));
     $db->addJoke(new Quote(485, "%firstName% %lastName%' Internet connection is faster upstream than downstream because even data has more incentive to run from him than to him.", array($nerdy)));
@@ -508,7 +505,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(518, "%firstName% %lastName% doesn't cheat death. He wins fair and square.", array()));
     $db->addJoke(new Quote(519, "%firstName% %lastName% once won a game of connect four in 3 moves.", array()));
     $db->addJoke(new Quote(520, "With %firstName% %lastName% P = NP. There's no nondeterminism with %firstName% %lastName% decisions.", array($nerdy)));
-    $db->addJoke(new Quote(521, "%firstName% %lastName% lost his virginity before his dad did.", array($explicit)));
     $db->addJoke(new Quote(522, "%firstName% %lastName% can do a wheelie on a unicycle.", array()));
     $db->addJoke(new Quote(523, "%firstName% %lastName% can win in a game of Russian roulette with a fully loaded gun.", array()));
     $db->addJoke(new Quote(524, "%firstName% %lastName% eats lightning and shits out thunder.", array()));
@@ -527,7 +523,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(537, "Each hair in %firstName% %lastName%'s beard contributes to make the world's largest DDOS.", array($nerdy)));
     $db->addJoke(new Quote(538, "%firstName% %lastName%'s log statements are always at the FATAL level.", array($nerdy)));
     $db->addJoke(new Quote(539, "%firstName% %lastName%'s database has only one table, 'Kick', which he DROPs frequently.", array($nerdy)));
-    $db->addJoke(new Quote(540, "%firstName% %lastName% finished World of Warcraft.", array($nerdy)));
     $db->addJoke(new Quote(541, "When %firstName% %lastName% break the build, you can't fix it, because there is not a single line of code left.", array($nerdy)));
     $db->addJoke(new Quote(542, "%firstName% %lastName% types with one finger. He points it at the keyboard and the keyboard does the rest.", array($nerdy)));
     $db->addJoke(new Quote(543, "%firstName% %lastName%'s programs can pass the Turing Test by staring at the interrogator.", array($nerdy)));
