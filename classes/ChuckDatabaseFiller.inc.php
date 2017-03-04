@@ -276,7 +276,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(280, "When %firstName% %lastName% works out on the Total Gym, the Total Gym feels like it's been raped.", array()));
     $db->addJoke(new Quote(281, "4 out of 5 doctors fail to recommend %firstName% %lastName% as a solution to most problems. Also, 80% of doctors die unexplained, needlessly brutal deaths.", array()));
     $db->addJoke(new Quote(282, "%firstName% %lastName% can skeletize a cow in two minutes.", array()));
-    $db->addJoke(new Quote(283, "The only sure things are Death and Taxes?and when %firstName% %lastName% goes to work for the IRS, they'll be the same thing.", array()));
+    $db->addJoke(new Quote(283, "The only sure things are Death and Taxes and when %firstName% %lastName% goes to work for the IRS, they'll be the same thing.", array()));
     $db->addJoke(new Quote(284, "%firstName% %lastName%' first job was as a paperboy. There were no survivors.", array()));
     $db->addJoke(new Quote(285, "With the rising cost of gasoline, %firstName% %lastName% is beginning to worry about his drinking habit.", array()));
     $db->addJoke(new Quote(286, "The square root of %firstName% %lastName% is pain. Do not try to square %firstName% %lastName%, the result is death.", array()));
