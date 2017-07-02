@@ -411,7 +411,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(416, "%firstName% %lastName% plays racquetball with a waffle iron and a bowling ball.", array()));
     $db->addJoke(new Quote(417, "According to the Bible, God created the universe in six days. Before that, %firstName% %lastName% created God by snapping his fingers.", array()));
     $db->addJoke(new Quote(418, "%firstName% %lastName% doesn't believe in ravioli. He stuffs a live turtle with beef and smothers it in pig's blood.", array()));
-    $db->addJoke(new Quote(419, "Count from one to ten. That's how long it would take %firstName% %lastName% to kill you...Fourty seven times.", array()));
+    $db->addJoke(new Quote(419, "Count from one to ten. That's how long it would take %firstName% %lastName% to kill you...Forty seven times.", array()));
     $db->addJoke(new Quote(420, "The 1972 Miami Dolphins lost one game, it was a game vs. %firstName% %lastName% and three seven year old girls. %firstName% %lastName% won with a roundhouse-kick to the face in overtime.", array()));
     $db->addJoke(new Quote(421, "%firstName% %lastName% is not Politically Correct. He is just Correct. Always.", array()));
     $db->addJoke(new Quote(422, "Mr. T pities the fool. %firstName% %lastName% rips the fool's head off.", array()));
