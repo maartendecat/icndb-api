@@ -216,9 +216,16 @@ class ChuckAPI {
 	 *	@param	$categories	The categories to limit (array of strings)
 	 */
 	public function echoRandomQuoteBelongingTo($fn, $ln, $categories) {
-		$quote = $this->database->getRandomQuoteBelongingTo($categories);
-		$quote->replaceNames($fn, $ln);
-		$this->echoQuote($quote);		
+		try {
+			$quote = $this->database->getRandomQuoteBelongingTo($categories);
+			$quote->replaceNames($fn, $ln);
+			$this->echoQuote($quote);
+		} catch (NoSuchCategoryException $e) {
+			$this->echoException($e);
+		} catch (NoSuchQuoteException $e) {
+			$this->echoException($e);
+		}
+
 	}
 
 	/************************************************************************************
@@ -340,11 +347,18 @@ class ChuckAPI {
 	 *	@param	$categories	The categories to limit (array of strings)
 	 */
 	public function echoRandomQuotesBelongingTo($fn, $ln, $number, $categories) {
-		$quotes = $this->database->getRandomQuotesBelongingTo($number, $categories);
-		foreach($quotes as $quote) {
-			$quote->replaceNames($fn, $ln);
+		try {
+			$quotes = $this->database->getRandomQuotesBelongingTo($number, $categories);
+			foreach($quotes as $quote) {
+				$quote->replaceNames($fn, $ln);
+			}
+			$this->echoQuotes($quotes);
+		} catch (NoSuchCategoryException $e) {
+			$this->echoException($e);
+		} catch (NoSuchQuoteException $e) {
+			$this->echoException($e);
 		}
-		$this->echoQuotes($quotes);
+
 	}
 
 	/************************************************************************************
