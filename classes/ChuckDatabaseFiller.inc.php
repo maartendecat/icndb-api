@@ -403,7 +403,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(408, "Love does not hurt. %firstName% %lastName% does.", array()));
     $db->addJoke(new Quote(409, "The term \"Cleveland Steamer\" got its name from %firstName% %lastName%, when he took a dump while visiting the Rock and Roll Hall of fame and buried northern Ohio under a glacier of fecal matter.", array()));
     $db->addJoke(new Quote(410, "%firstName% %lastName% once round-house kicked a salesman. Over the phone.", array()));
-    $db->addJoke(new Quote(411, "The pen is mighter than the sword, but only if the pen is held by %firstName% %lastName%.", array()));
+    $db->addJoke(new Quote(411, "The pen is mightier than the sword, but only if the pen is held by %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(412, "%firstName% %lastName% knows the last digit of pi.", array($nerdy)));
     $db->addJoke(new Quote(413, "Those aren't credits that roll after Walker Texas Ranger. It is actually a list of fatalities that occurred during the making of the episode.", array()));
     $db->addJoke(new Quote(414, "The air around %firstName% %lastName% is always a balmy 78 degrees.", array()));
