@@ -51,7 +51,7 @@ class ChuckScriptCommunicationAPI extends ChuckAPI {
 	 *	
 	 *	@param	$quote	Quote instance
 	 */
-	protected function echoExeption($e) {
+	protected function echoException($e) {
 		echo('(function() { ' . $this->callback . '({ "type": "' . get_class($e) . '", "value": "' . $e->getMessage() . '" }); })();');	
 	}
 

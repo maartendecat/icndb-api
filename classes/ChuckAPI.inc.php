@@ -159,7 +159,7 @@ class ChuckAPI {
 	 *	
 	 *	@param	$quote	Quote instance
 	 */
-	protected function echoExeption($e) {
+	protected function echoException($e) {
 		echo('{ "type": "' . get_class($e) . '", "value": "' . $e->getMessage() . '"' . $this->getDebugJSON() . ' }');	
 	}
 
