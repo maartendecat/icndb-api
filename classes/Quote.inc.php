@@ -18,7 +18,7 @@ class Quote {
 	 */
 //	const CATEGORY_EXPLICIT = 'explicit';
 //	const CATEGORY_NERDY = 'nerdy';
-	
+
 	private $id;
 	public function getId() {
 		return $this->id;
@@ -114,7 +114,7 @@ class Quote {
 
 	/**
 	 *	Returns the categories this quote belongs to.
-	 *	
+	 *
 	 *	@return	Array of Strings
 	 */
 	public function getCategories() {
@@ -127,6 +127,17 @@ class Quote {
 	}
 
 	/**
+	 * Returns the replaced last name for appostrophes
+	 *
+	 * @param - String - the last name
+	 * @return String
+	 */
+	private function lastNameForAppostrophe($lastName) {
+        $suffix = (substr($lastName, -1) === 's') ? '\'' : '\'s';
+        return $lastName . $suffix;
+    }
+
+	/**
 	 *	Replaces all occurrences of %firstName% and %lastName%
 	 *	with the respective given values.
 	 */
@@ -134,12 +145,13 @@ class Quote {
 		$this->quote = str_replace('%firstName[0]%', substr($firstName, 0, 1), $this->quote);
 		$this->quote = str_replace('%lastName[0]%', substr($lastName, 0, 1), $this->quote);
 		$this->quote = str_replace('%firstName%', $firstName, $this->quote);
+		$this->quote = str_replace('%lastName%\'', $this->lastNameForAppostrophe($lastName), $this->quote);
 		$this->quote = str_replace('%lastName%', $lastName, $this->quote);
 	}
 
 	/**
 	 *	Returns a JSON representation of this object.
-	 *	
+	 *
 	 *	@return	String
 	 */
 	public function toJSON($escaper) {
