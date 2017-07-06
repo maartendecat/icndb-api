@@ -276,7 +276,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(280, "When %firstName% %lastName% works out on the Total Gym, the Total Gym feels like it's been raped.", array()));
     $db->addJoke(new Quote(281, "4 out of 5 doctors fail to recommend %firstName% %lastName% as a solution to most problems. Also, 80% of doctors die unexplained, needlessly brutal deaths.", array()));
     $db->addJoke(new Quote(282, "%firstName% %lastName% can skeletize a cow in two minutes.", array()));
-    $db->addJoke(new Quote(283, "The only sure things are Death and Taxes?and when %firstName% %lastName% goes to work for the IRS, they'll be the same thing.", array()));
+    $db->addJoke(new Quote(283, "The only sure things are Death and Taxes and when %firstName% %lastName% goes to work for the IRS, they'll be the same thing.", array()));
     $db->addJoke(new Quote(284, "%firstName% %lastName%' first job was as a paperboy. There were no survivors.", array()));
     $db->addJoke(new Quote(285, "With the rising cost of gasoline, %firstName% %lastName% is beginning to worry about his drinking habit.", array()));
     $db->addJoke(new Quote(286, "The square root of %firstName% %lastName% is pain. Do not try to square %firstName% %lastName%, the result is death.", array()));
@@ -403,7 +403,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(408, "Love does not hurt. %firstName% %lastName% does.", array()));
     $db->addJoke(new Quote(409, "The term \"Cleveland Steamer\" got its name from %firstName% %lastName%, when he took a dump while visiting the Rock and Roll Hall of fame and buried northern Ohio under a glacier of fecal matter.", array()));
     $db->addJoke(new Quote(410, "%firstName% %lastName% once round-house kicked a salesman. Over the phone.", array()));
-    $db->addJoke(new Quote(411, "The pen is mighter than the sword, but only if the pen is held by %firstName% %lastName%.", array()));
+    $db->addJoke(new Quote(411, "The pen is mightier than the sword, but only if the pen is held by %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(412, "%firstName% %lastName% knows the last digit of pi.", array($nerdy)));
     $db->addJoke(new Quote(413, "Those aren't credits that roll after Walker Texas Ranger. It is actually a list of fatalities that occurred during the making of the episode.", array()));
     $db->addJoke(new Quote(414, "The air around %firstName% %lastName% is always a balmy 78 degrees.", array()));
@@ -411,7 +411,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(416, "%firstName% %lastName% plays racquetball with a waffle iron and a bowling ball.", array()));
     $db->addJoke(new Quote(417, "According to the Bible, God created the universe in six days. Before that, %firstName% %lastName% created God by snapping his fingers.", array()));
     $db->addJoke(new Quote(418, "%firstName% %lastName% doesn't believe in ravioli. He stuffs a live turtle with beef and smothers it in pig's blood.", array()));
-    $db->addJoke(new Quote(419, "Count from one to ten. That's how long it would take %firstName% %lastName% to kill you...Fourty seven times.", array()));
+    $db->addJoke(new Quote(419, "Count from one to ten. That's how long it would take %firstName% %lastName% to kill you...Forty seven times.", array()));
     $db->addJoke(new Quote(420, "The 1972 Miami Dolphins lost one game, it was a game vs. %firstName% %lastName% and three seven year old girls. %firstName% %lastName% won with a roundhouse-kick to the face in overtime.", array()));
     $db->addJoke(new Quote(421, "%firstName% %lastName% is not Politically Correct. He is just Correct. Always.", array()));
     $db->addJoke(new Quote(422, "Mr. T pities the fool. %firstName% %lastName% rips the fool's head off.", array()));
@@ -550,7 +550,26 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(565, "%firstName% %lastName% can make a class that is both abstract and final.", array($nerdy)));
     $db->addJoke(new Quote(566, "%firstName% %lastName% could use anything in java.util.* to kill you, including the javadocs.", array($nerdy)));
     $db->addJoke(new Quote(567, "Code runs faster when %firstName% %lastName% watches it.", array($nerdy)));
-    $db->addJoke(new Quote(584, "Only %firstName% %lastName% shuts down websites without due process, not SOPA or PIPA.", array()));
-    # Number of jokes: 549
+    $db->addJoke(new Quote(584, "Only %firstName% %lastName% shuts down websites without due process, not SOPA or PIPA.", array($nerdy)));
+    $db->addJoke(new Quote(585, "%firstName% %lastName% does not need a watch, he decides what time it is.", array()));
+    $db->addJoke(new Quote(586, "%firstName% %lastName% already went to Moon and Mars, that's why there are no signs of life.", array()));
+    $db->addJoke(new Quote(587, "Once a police officer caught %firstName% %lastName%, the cop was lucky enough to escape with a warning.", array()));
+    $db->addJoke(new Quote(588, "%firstName% %lastName% knows Victoria's secret.", array()));
+    $db->addJoke(new Quote(589, "Dark spots on the Moon are the result of %firstName% %lastName%' shooting practice.", array()));
+    $db->addJoke(new Quote(590, "%firstName% %lastName% died before 20 years, Death doesn't have the courage to tell him yet.", array()));
+    $db->addJoke(new Quote(591, "There is no April 1st in %firstName% %lastName%' calendar, because no one can fool him.", array()));
+    $db->addJoke(new Quote(592, "%firstName% %lastName% can make onions cry.", array()));
+    $db->addJoke(new Quote(593, "%firstName% %lastName% can watch the radio.", array()));
+    $db->addJoke(new Quote(594, "%firstName% %lastName% built the hospital he was born in.", array()));
+    $db->addJoke(new Quote(595, "Once %firstName% %lastName% signed a cheque and the bank bounced.", array()));
+    $db->addJoke(new Quote(596, "%firstName% %lastName% can drown a fish.", array()));
+    $db->addJoke(new Quote(597, "Once death had a near %firstName% %lastName% experience.", array()));
+    $db->addJoke(new Quote(598, "Once %firstName% %lastName% and Superman had a competition. The loser had to wear his underwear over his pants.", array()));
+    $db->addJoke(new Quote(599, "%firstName% %lastName% can make fire using two ice cubes.", array()));
+    $db->addJoke(new Quote(600, "%firstName% %lastName% tears can cure the cancer, but the sad thing is %firstName% %lastName% never cries.", array()));
+    $db->addJoke(new Quote(601, "%firstName% %lastName% can remember the future.", array()));
+    $db->addJoke(new Quote(602, "%firstName% %lastName% doesn't age, because time cannot keep up with him.", array()));
+    $db->addJoke(new Quote(603, "Ghosts are actually caused by %firstName% %lastName% killing people faster than Death can process them.", array()));
+    # Number of jokes: 558
   }
 }
