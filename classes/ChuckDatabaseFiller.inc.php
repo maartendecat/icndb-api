@@ -551,6 +551,21 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(566, "%firstName% %lastName% could use anything in java.util.* to kill you, including the javadocs.", array($nerdy)));
     $db->addJoke(new Quote(567, "Code runs faster when %firstName% %lastName% watches it.", array($nerdy)));
     $db->addJoke(new Quote(584, "Only %firstName% %lastName% shuts down websites without due process, not SOPA or PIPA.", array()));
-    # Number of jokes: 549
+    $db->addJoke(new Quote(585, "%firstName% %lastName% does not need a watch, he decides what time it is.", array()));
+    $db->addJoke(new Quote(586, "%firstName% %lastName% already went to Moon and Mars, that's why there are no signs of life.", array()));
+    $db->addJoke(new Quote(587, "Once a Police officer caught %firstName% %lastName%, the cop was lucky enough to escape with a warning.", array()));
+    $db->addJoke(new Quote(588, "%firstName% %lastName% knows Victoria's secret.", array()));
+    $db->addJoke(new Quote(589, "Dark spots on the Moon are the result of %firstName% %lastName%' shooting practice.", array()));
+    $db->addJoke(new Quote(590, "%firstName% %lastName% died before 20 years, Death doesn't have the courage to tell him yet.", array()));
+    $db->addJoke(new Quote(591, "There is no April 1st in %firstName% %lastName%' calendar, because no one can fool him.", array()));
+    $db->addJoke(new Quote(592, "%firstName% %lastName% can make onions cry.", array()));
+    $db->addJoke(new Quote(593, "%firstName% %lastName% can watch the Radio.", array()));
+    $db->addJoke(new Quote(594, "%firstName% %lastName% built the hospital he was born in.", array()));
+    $db->addJoke(new Quote(595, "Once %firstName% %lastName% signed a cheque and the Bank bounced!", array()));
+    $db->addJoke(new Quote(596, "%firstName% %lastName% can drown a fish.", array()));
+    $db->addJoke(new Quote(597, "Once death has near %firstName% %lastName% experience.", array()));
+    $db->addJoke(new Quote(598, "Once %firstName% %lastName% and Superman had a competition, The loser had to wear his underwear over his pants!", array()));
+    $db->addJoke(new Quote(599, "%firstName% %lastName% can make fire using two ice cubes.", array()));
+    # Number of jokes: 554
   }
 }
