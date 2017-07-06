@@ -121,7 +121,10 @@ class ChuckDatabase {
 	 *	@return	Joke instance
 	 */
 	private function selectRandomQuote($jokes) {
-		return $jokes[array_rand($jokes)];
+		if(count($jokes) > 0){
+			return $jokes[array_rand($jokes)];
+		}
+		throw new NoSuchQuoteException('No joke found');
 	}
 
 	/**
@@ -219,6 +222,7 @@ class ChuckDatabase {
 		if($categories == null || count($categories) == 0) {
 			return $this->getRandomQuote();
 		}
+		$categories = $this->filterValidCategories($categories);
 		return $this->selectRandomQuote($this->getAllQuotesBelongingTo($categories));
 	}
 
@@ -235,6 +239,7 @@ class ChuckDatabase {
 		if($categories == null || count($categories) == 0) {
 			return $this->getRandomQuote();
 		}
+		$categories = $this->filterValidCategories($categories);
 		return $this->selectRandomQuotes($number, $this->getAllQuotesBelongingTo($categories));
 	}
 
@@ -311,6 +316,22 @@ class ChuckDatabase {
 			}
 		}
 		return false;
+	}
+
+	/**
+	 * Return only valid categories of the list
+	 *
+	 * @param $categories array
+	 * @return array
+	 */
+	public function filterValidCategories($categories) {
+		$filteredCategories = array_filter($categories, function ($category) {
+			return $this->isValidCategory($category);
+		});
+		if(count($filteredCategories) > 0){
+			return $filteredCategories;
+		}
+		throw new NoSuchCategoryException('No such categories=' . implode(",", $categories));
 	}
 
 	/**
