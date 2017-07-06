@@ -570,6 +570,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(601, "%firstName% %lastName% can remember the future.", array()));
     $db->addJoke(new Quote(602, "%firstName% %lastName% doesn't age, because time cannot keep up with him.", array()));
     $db->addJoke(new Quote(603, "Ghosts are actually caused by %firstName% %lastName% killing people faster than Death can process them.", array()));
-    # Number of jokes: 554
+    # Number of jokes: 558
   }
 }
