@@ -95,7 +95,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(91, "When taking the SAT, write \"%firstName% %lastName%\" for every answer. You will score over 8000.", array()));
     $db->addJoke(new Quote(92, "%firstName% %lastName% invented black. In fact, he invented the entire spectrum of visible light. Except pink. Tom Cruise invented pink.", array()));
     $db->addJoke(new Quote(93, "When you're %firstName% %lastName%, anything + anything is equal to 1. One roundhouse kick to the face.", array()));
-    $db->addJoke(new Quote(94, "%firstName% %lastName% has the greatest Poker-Face of all time. He won the 1983 World Series of Poker, despite holding only a Joker, a Get out of Jail Free Monopoloy card, a 2 of clubs, 7 of spades and a green #4 card from the game UNO.", array()));
+    $db->addJoke(new Quote(94, "%firstName% %lastName% has the greatest Poker-Face of all time. He won the 1983 World Series of Poker, despite holding only a Joker, a Get out of Jail Free Monopoly card, a 2 of clubs, 7 of spades and a green #4 card from the game UNO.", array()));
     $db->addJoke(new Quote(95, "On his birthday, %firstName% %lastName% randomly selects one lucky child to be thrown into the sun.", array()));
     $db->addJoke(new Quote(96, "Nobody doesn't like Sara Lee. Except %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(97, "%firstName% %lastName% doesn't throw up if he drinks too much. %firstName% %lastName% throws down!", array()));
@@ -107,7 +107,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(103, "%firstName% %lastName% and Mr. T walked into a bar. The bar was instantly destroyed, as that level of awesome cannot be contained in one building.", array()));
     $db->addJoke(new Quote(104, "If you Google search \"%firstName% %lastName% getting his ass kicked\" you will generate zero results. It just doesn't happen.", array()));
     $db->addJoke(new Quote(105, "%firstName% %lastName% can drink an entire gallon of milk in thirty-seven seconds.", array()));
-    $db->addJoke(new Quote(106, "Little known medical fact: %firstName% %lastName% invented the Caesarean section when he roundhouse-kicked his way out of his monther's womb.", array()));
+    $db->addJoke(new Quote(106, "Little known medical fact: %firstName% %lastName% invented the Caesarean section when he roundhouse-kicked his way out of his mother's womb.", array()));
     $db->addJoke(new Quote(107, "%firstName% %lastName% doesn't bowl strikes, he just knocks down one pin and the other nine faint.", array()));
     $db->addJoke(new Quote(108, "The show Survivor had the original premise of putting people on an island with %firstName% %lastName%. There were no survivors, and nobody is brave enough to go to the island to retrieve the footage.", array()));
     $db->addJoke(new Quote(109, "It takes %firstName% %lastName% 20 minutes to watch 60 Minutes.", array()));
