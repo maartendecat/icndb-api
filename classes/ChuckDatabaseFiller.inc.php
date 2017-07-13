@@ -229,7 +229,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(232, "%firstName% %lastName% uses a night light. Not because %firstName% %lastName% is afraid of the dark, but the dark is afraid of %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(233, "When Bruce Banner gets mad, he turns into the Hulk. When the Hulk gets mad, he turns into %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(234, "%firstName% %lastName% kills anyone that asks: \"Do you want fries with that?\". Because by now everyone should know that %firstName% doesn't want fries with anything. Ever.", array()));
-    $db->addJoke(new Quote(235, "%firstName% %lastName% once kicked a horse in the chin. Its decendants are known today as Giraffes.", array()));
+    $db->addJoke(new Quote(235, "%firstName% %lastName% once kicked a horse in the chin. Its descendants are known today as Giraffes.", array()));
     $db->addJoke(new Quote(236, "Sticks and stones may break your bones, but a %firstName% %lastName% glare will liquefy your kidneys.", array()));
     $db->addJoke(new Quote(237, "Human cloning is outlawed because of %firstName% %lastName%, because then it would be possible for a %firstName% %lastName% roundhouse kick to meet another %firstName% %lastName% roundhouse kick. Physicists theorize that this contact would end the universe.", array()));
     $db->addJoke(new Quote(238, "%firstName% %lastName% once went skydiving, but promised never to do it again. One Grand Canyon is enough.", array()));
@@ -528,7 +528,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(543, "%firstName% %lastName%'s programs can pass the Turing Test by staring at the interrogator.", array($nerdy)));
     $db->addJoke(new Quote(544, "If you try to kill -9 %firstName% %lastName%'s programs, it backfires.", array($nerdy)));
     $db->addJoke(new Quote(545, "%firstName% %lastName%'s brain waves are suspected to be harmful to cell phones.", array()));
-    $db->addJoke(new Quote(546, "%firstName% %lastName% does infinit loops in 4 seconds.", array($nerdy)));
+    $db->addJoke(new Quote(546, "%firstName% %lastName% does infinite loops in 4 seconds.", array($nerdy)));
     $db->addJoke(new Quote(547, "Product Owners never ask %firstName% %lastName% for more features. They ask for mercy.", array($nerdy)));
     $db->addJoke(new Quote(548, "Product Owners never argue with %firstName% %lastName% after he demonstrates the DropKick feature.", array($nerdy)));
     $db->addJoke(new Quote(549, "%firstName% %lastName% killed two stones with one bird.", array()));
