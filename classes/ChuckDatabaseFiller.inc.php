@@ -102,7 +102,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(98, "In the beginning there was nothing...then %firstName% %lastName% Roundhouse kicked that nothing in the face and said \"Get a job\". That is the story of the universe.", array()));
     $db->addJoke(new Quote(99, "%firstName% %lastName% has 12 moons. One of those moons is the Earth.", array()));
     $db->addJoke(new Quote(100, "%firstName% %lastName% grinds his coffee with his teeth and boils the water with his own rage.", array()));
-    $db->addJoke(new Quote(101, "Archeologists unearthed an old english dictionary dating back to the year 1236. It defined \"victim\" as \"one who has encountered %firstName% %lastName%\"", array()));
+    $db->addJoke(new Quote(101, "Archaeologists unearthed an old english dictionary dating back to the year 1236. It defined \"victim\" as \"one who has encountered %firstName% %lastName%\"", array()));
     $db->addJoke(new Quote(102, "%firstName% %lastName% ordered a Big Mac at Burger King, and got one.", array()));
     $db->addJoke(new Quote(103, "%firstName% %lastName% and Mr. T walked into a bar. The bar was instantly destroyed, as that level of awesome cannot be contained in one building.", array()));
     $db->addJoke(new Quote(104, "If you Google search \"%firstName% %lastName% getting his ass kicked\" you will generate zero results. It just doesn't happen.", array()));
