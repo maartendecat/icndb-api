@@ -570,6 +570,13 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(601, "%firstName% %lastName% can remember the future.", array()));
     $db->addJoke(new Quote(602, "%firstName% %lastName% doesn't age, because time cannot keep up with him.", array()));
     $db->addJoke(new Quote(603, "Ghosts are actually caused by %firstName% %lastName% killing people faster than Death can process them.", array()));
-    # Number of jokes: 558
+    $db->addJoke(new Quote(604, "%firstName% %lastName% understands every definition in the Oxford Thesaurus, except one - \"mercy\".", array()));
+    $db->addJoke(new Quote(605, "%firstName% %lastName% doesn't need a keyboard he tells the computer to write something and it does.", array($nerdy)));
+    $db->addJoke(new Quote(606, "%firstName% %lastName% once pissed in a gas tank of a semi truck as a joke - that truck is now know as Optimus Prime.", array()));
+    $db->addJoke(new Quote(607, "%firstName% %lastName% plays pool with comets and astroids. He shoots them into black holes.", array()));
+    $db->addJoke(new Quote(608, "%firstName% %lastName% can stand on his head. His dick-head.", array($explicit)));
+    $db->addJoke(new Quote(609, "There was never anything wrong with Achilles' heel until he got mad and decided to kick %firstName% %lastName%.", array()));
+    $db->addJoke(new Quote(610, "Did you know that %firstName% %lastName% was in every Star Wars movie? He was \"The Force\".", array()));
+    # Number of jokes: 565
   }
 }
