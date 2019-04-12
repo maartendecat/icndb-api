@@ -577,6 +577,11 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(608, "%firstName% %lastName% can stand on his head. His dick-head.", array($explicit)));
     $db->addJoke(new Quote(609, "There was never anything wrong with Achilles' heel until he got mad and decided to kick %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(610, "Did you know that %firstName% %lastName% was in every Star Wars movie? He was \"The Force\".", array()));
-    # Number of jokes: 565
+    $db->addJoke(new Quote(611, "Knock knock, Whos there? %firstName% %lastName%! %firstName% %lastName% who? Sorry, joke is over when %firstName% %lastName% gets involved!", array()));
+    $db->addJoke(new Quote(612, "%firstName% %lastName% doesn't win, he allows you to loose.", array()));
+    $db->addJoke(new Quote(613, "%firstName% %lastName% knows Victoria's Secret.", array()));
+    $db->addJoke(new Quote(613, "Tornados occur when %firstName% %lastName% sneezes.", array()));
+    $db->addJoke(new Quote(614, "%firstName% %lastName% once sold eBay to eBay on eBay.", array()));
+    # Number of jokes: 570
   }
 }
