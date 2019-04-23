@@ -371,7 +371,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(376, "%firstName% %lastName% doesn't daydream. He's too busy giving other people nightmares.", array()));
     $db->addJoke(new Quote(377, "When Arnold says \"I'll be back\" in Terminator movie it is implied that he's going to ask %firstName% %lastName% for help.", array()));
     $db->addJoke(new Quote(378, "There are no such things as tornados. %firstName% %lastName% just hates trailer parks.", array()));
-    $db->addJoke(new Quote(379, "%firstName% %lastName%' Penis is a third degree blackbelt, and an honorable 32nd-degree mason.", array($explicit)));
+    $db->addJoke(new Quote(379, "%firstName% %lastName%' penis is a third degree blackbelt, and an honorable 32nd-degree mason.", array($explicit)));
     $db->addJoke(new Quote(380, "%firstName% %lastName% does not follow fashion trends, they follow him. But then he turns around and kicks their ass. Nobody follows %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(381, "Diamonds are not, despite popular belief, carbon. They are, in fact, %firstName% %lastName% fecal matter. This was proven a recently, when scientific analysis revealed what appeared to be Jean-Claude Van Damme bone fragments inside the Hope Diamond.", array()));
     $db->addJoke(new Quote(382, "%firstName% %lastName% once participated in the running of the bulls. He walked.", array()));
@@ -577,8 +577,8 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(608, "%firstName% %lastName% can stand on his head. His dick-head.", array($explicit)));
     $db->addJoke(new Quote(609, "There was never anything wrong with Achilles' heel until he got mad and decided to kick %firstName% %lastName%.", array()));
     $db->addJoke(new Quote(610, "Did you know that %firstName% %lastName% was in every Star Wars movie? He was \"The Force\".", array()));
-    $db->addJoke(new Quote(611, "Knock knock, Whos there? %firstName% %lastName%! %firstName% %lastName% who? Sorry, joke is over when %firstName% %lastName% gets involved!", array()));
-    $db->addJoke(new Quote(612, "%firstName% %lastName% doesn't win, he allows you to loose.", array()));
+    $db->addJoke(new Quote(611, "Knock knock, who's there? %firstName% %lastName%! %firstName% %lastName% who? Sorry, joke is over when %firstName% %lastName% gets involved!", array()));
+    $db->addJoke(new Quote(612, "%firstName% %lastName% doesn't win, he allows you to lose.", array()));
     $db->addJoke(new Quote(613, "%firstName% %lastName% knows Victoria's Secret.", array()));
     $db->addJoke(new Quote(613, "Tornados occur when %firstName% %lastName% sneezes.", array()));
     $db->addJoke(new Quote(614, "%firstName% %lastName% once sold eBay to eBay on eBay.", array()));
