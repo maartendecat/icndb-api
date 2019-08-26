@@ -453,7 +453,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(464, "\"It works on my machine\" always holds true for %firstName% %lastName%.", array($nerdy)));
     $db->addJoke(new Quote(465, "Whiteboards are white because %firstName% %lastName% scared them that way.", array()));
     $db->addJoke(new Quote(466, "%firstName% %lastName% doesn't do Burn Down charts, he does Smack Down charts.", array($nerdy)));
-    $db->addJoke(new Quote(467, "%firstName% %lastName% can delete the Recycling Bin.", array($nerdy)));
+    $db->addJoke(new Quote(467, "%firstName% %lastName% can delete the Recycle Bin.", array($nerdy)));
     $db->addJoke(new Quote(468, "%firstName% %lastName%'s beard can type 140 wpm.", array($nerdy)));
     $db->addJoke(new Quote(469, "%firstName% %lastName% can unit test entire applications with a single assert.", array($nerdy)));
     $db->addJoke(new Quote(470, "%firstName% %lastName% doesn't bug hunt as that signifies a probability of failure, he goes bug killing.", array($nerdy)));
@@ -587,6 +587,24 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(617, "%firstName% %lastName% doesn't turn on his faucet, he stares at it until it cries.", array()));
     $db->addJoke(new Quote(618, "%firstName% %lastName% puts sunglasses on to protect the sun from his eyes.", array()));
     $db->addJoke(new Quote(619, "%firstName% %lastName% can lock a safe and keep the key inside it.", array()));
-    # Number of jokes: 575
+    $db->addJoke(new Quote(620, "It's said that if you look directly into %firstName% %lastName%'s eyes you can see the beginning and end of all things... but no one has had the balls to try.", array()));
+    $db->addJoke(new Quote(621, "%firstName% %lastName% actually built the stairway to heaven.", array()));
+    $db->addJoke(new Quote(622, "%firstName% %lastName% counted to infinity... Twice.", array($nerdy)));
+    $db->addJoke(new Quote(623, "%firstName% %lastName% pulse is measured on the richter scale.", array()));
+    $db->addJoke(new Quote(624, "%firstName% %lastName% can deny the \"License Agreement\" and still be able to install the software.", array($nerdy)));
+    $db->addJoke(new Quote(625, "In plain C# every statement ends with a semicolon. But in %firstName% %lastName% C# code all statements end with one or more exclamation marks. Because everything %firstName% %lastName% does is amazing!", array($nerdy)));
+    $db->addJoke(new Quote(626, "%firstName% %lastName%'s preferred sorting algorithm is killsort. It kills everything that is out of place.", array($nerdy)));
+    $db->addJoke(new Quote(627, "%firstName% %lastName%' code has no error handling. %firstName% %lastName%' code has no errors.", array($nerdy)));
+    $db->addJoke(new Quote(628, "The C in \"C language\" means %firstName%.", array($nerdy)));
+    $db->addJoke(new Quote(629, "%firstName% %lastName% uses 64 bit windows on 32 bit machine.", array($nerdy)));
+    $db->addJoke(new Quote(630, "It was %firstName% %lastName% that bit the apple in the Apple logo.", array($nerdy)));
+    $db->addJoke(new Quote(631, "%firstName% %lastName% debugs binary code using a pencil and a sheet of paper.", array($nerdy)));
+    $db->addJoke(new Quote(632, "%firstName% %lastName% has no need for a compress utility. He just stares at the files and they shrink in fear.", array($nerdy)));
+    $db->addJoke(new Quote(633, "%firstName% %lastName%'s Keyboard does not have any F1 key, he never needs any help.", array($nerdy)));
+    $db->addJoke(new Quote(634, "%firstName% %lastName% is never shown a login window. The computers sense his awesomeness and automagically log him in with administrator privileges.", array($nerdy)));
+    $db->addJoke(new Quote(635, "The SQL condition \"LIKE '%firstName% %lastName%'\" can only return %firstName% %lastName% himself. Because nothing is like %firstName% %lastName%.", array($nerdy)));
+    $db->addJoke(new Quote(636, "%firstName% %lastName% wrote a program in Python that was easier to understand after being encrypted with RSA.", array($nerdy)));
+    $db->addJoke(new Quote(637, "%firstName% %lastName% implements \"Indestructible\". All the other creatures implements \"Killable\".", array($nerdy)));
+    # Number of jokes: 593
   }
 }
