@@ -579,7 +579,6 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(610, "Did you know that %firstName% %lastName% was in every Star Wars movie? He was \"The Force\".", array()));
     $db->addJoke(new Quote(611, "Knock knock, who's there? %firstName% %lastName%! %firstName% %lastName% who? Sorry, joke is over when %firstName% %lastName% gets involved!", array()));
     $db->addJoke(new Quote(612, "%firstName% %lastName% doesn't win, he allows you to lose.", array()));
-    $db->addJoke(new Quote(613, "%firstName% %lastName% knows Victoria's Secret.", array()));
     $db->addJoke(new Quote(613, "Tornados occur when %firstName% %lastName% sneezes.", array()));
     $db->addJoke(new Quote(614, "%firstName% %lastName% once sold eBay to eBay on eBay.", array()));
     $db->addJoke(new Quote(615, "%firstName% %lastName% can build a snowman out of rain.", array()));
@@ -587,6 +586,7 @@ class ChuckDatabaseFiller {
     $db->addJoke(new Quote(617, "%firstName% %lastName% doesn't turn on his faucet, he stares at it until it cries.", array()));
     $db->addJoke(new Quote(618, "%firstName% %lastName% puts sunglasses on to protect the sun from his eyes.", array()));
     $db->addJoke(new Quote(619, "%firstName% %lastName% can lock a safe and keep the key inside it.", array()));
+    $db->addJoke(new Quote(620, "%firstName% %lastName% knows Victoria's Secret.", array()));
     # Number of jokes: 575
   }
 }
